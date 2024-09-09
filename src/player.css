@@ -1,0 +1,61 @@
+
+.page-background {
+    position: relative;
+    background: url('https://u7.uidownload.com/vector/349/62/vector-galaxy-background-landscape-vector-svg-eps.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1; /* Ensure overlay is above background but below content */
+}
+
+.container {
+    position: relative;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for contrast */
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    z-index: 2; /* Ensure container is above the overlay */
+}
+
+.video-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.btn-custom {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-custom:hover {
+    color: #f0f0f0;
+}
