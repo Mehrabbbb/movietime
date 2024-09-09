@@ -4,14 +4,14 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",                    // Starts the Vite development server
-    "build": "vite build",           // Builds the React app for production
-    "lint": "eslint .",              // Runs ESLint to lint your code
-    "preview": "vite preview",       // Previews the production build
-    "predeploy": "npm run build",     // Builds the React app before deploying
-    "deploy": "gh-pages -d build",    // Deploys the React app to GitHub Pages
-    "server": "node server.js",       // Starts the Node.js server
-    "start:dev": "concurrently \"npm run server\" \"npm run dev\""  // Runs both React and Node.js servers concurrently in development
+    "dev": "vite",                    
+    "build": "vite build",           
+    "lint": "eslint .",             
+    "preview": "vite preview",     
+    "predeploy": "npm run build",    
+    "deploy": "gh-pages -d build",  
+    "server": "node server.js",      
+    "start:dev": "concurrently \"npm run server\" \"npm run dev\""
   },
   "dependencies": {
     "axios": "^1.7.7",
@@ -32,7 +32,7 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
-    "concurrently": "^8.0.0",        // Added to run multiple scripts concurrently
+    "concurrently": "^8.0.0",     
     "eslint": "^9.9.0",
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
